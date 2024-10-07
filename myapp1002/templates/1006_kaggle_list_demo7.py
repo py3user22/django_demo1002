@@ -20,8 +20,14 @@ def fashionably_late(arrivals, name):
     fir_half = arrivals[:mid_ele]  # from the start to the middle
     last = arrivals[-1]  # last element in list
 
-    if len(arrivals) <= 2:
+    if len(arrivals) < 2:
         return True
+
+    """Determine the mid points"""
+    if len(arrivals) % 2 == 0:
+        mid_point = (arrivals[mid_ele - 1], arrivals[mid_ele])
+    else:
+        mid_point = (arrivals[mid_ele])
 
     if name in fir_half:
         return False
@@ -37,11 +43,12 @@ def fashionably_late(arrivals, name):
 
 
 print(fashionably_late(list_one, 'May'))  # False
-# print(fashionably_late(list_one, 'Adela'))  # False
+print(fashionably_late(list_one, 'Mona'))  # False
 print(fashionably_late(list_two, 'George'))  # False
 print(fashionably_late(list_two, 'Ringo'))  # False
 
 print(fashionably_late(list_three, 'Jessica'))  # True
+
 
 
 

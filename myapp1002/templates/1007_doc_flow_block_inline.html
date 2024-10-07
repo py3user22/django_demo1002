@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1007 --block element vs inline element </h1>
+    <p>
+        #___ block lvl element <br>---------------------------<br>
+        will occupy the full horizontal width of its parent element & vertical height <br>
+        each block element will have a new line b4 & after <br>
+        <br>
+        < div> < /div>  --> means divided element --> used to divide content into sections <br>
+        < form> < /form>  <br>
+        < h1> < /h1> - < h5> < /h5>  <br>
+    </p>
+    <p>
+        #___ inline elements <br>---------------------------<br>
+        < a href="index.html"> < /a> <br>
+        < img src="photo.png"> <br>
+        < input> <br>
+        < label> < /label> <br>
+        < b> < /b>  for bold <br>
+        < i> < /i>  for italics <br>
+        < em> < /em> for emphasis <br>
+        < span> < /span>   <br>
+
+    </p>
+    <p>
+        #___ example of div with span inside --> block w/ inline inside the block element <br>
+        < div> <br>
+        ... < span>   < /span> <br>
+        ... < span>   < /span> <br>
+        ... < span>   < /span> <br>
+        < /div> <br>
+    </p>
+    <p>
+        #___ example w/ div changing the span to div -- which will go from across one line, to 3 seperate lines <br>
+        < div> <br>
+        ... < span>   < /span> <br>
+        ... < div>   < /div> <br>
+        ... < span>   < /span> <br>
+        < /div> <br>
+    </p>
+    <p>
+        #--- adding the link for the stylesheet in the head section of html <br>----------------------- <br>
+        < head> <br>
+        .... < link rel="stylesheet" href="style.css>  <br>
+        < /head> <br><br>
+
+        <sup>CSS</sup> <br>
+        #middle { <br>
+        .... display: inline;  <br>
+        } <br><br>
+
+        #middle { <br>
+        .... display: block;  <br>
+        } <br><br>
+
+        #latest { <br>
+        .... background-color: purple; <br>
+        } <br><br>
+
+        .navigation { <br>
+        .... margin: 2px; <br>
+        } <br><br>
+
+        # element w/ class selector ex1 --> < p class="intro"> < /p> <br>-------------------<br>
+        p.intro { <br>
+        .... margin: 2px; <br>
+        } <br><br>
+
+        # descendant selectors --> used when need to select elements contained w/in another selector <br>
+        < div id="blog">  <br>
+        .... < h1> latest news < /h1> <br>
+        .... < div> <br>
+        ........ < h1> todays weather < /h1> <br>
+        ........ < p> < /p>  <br>
+        .... < /div> <br><br>
+
+        <sup>CSS</sup> <br>
+        #blog h1 { <br>
+        .... color: blue <br>
+        } <br><br>
+
+        #blog div h1 { <br>
+        .... color: blue; <br>
+        } <br><br>
+
+        # child selectors --> more specific than descendant selectors --> only select elements that are immediate <br>
+        children of the parent --> will select the #blog and then all the < h1> elements in it <br> ---------------------<br>
+        #blog > h1 { <br>
+        .... color: blue; <br>
+        } <br><br>
+
+        #___ :hover  pseudo-class <br>
+        a:hover { <br>
+        .... color: orange; <br>
+        } <br><br>
+
+    </p>
+    <p>
+        #__ predefined color names <br>_____________________<br>
+        black <br>
+        silver <br>
+        gray <br>
+        white <br>
+        maroon <br>
+        red <br>
+        purple <br>
+        fuchsia <br>
+        green <br>
+        lime <br>
+        olive <br>
+        yellow <br>
+        navy <br>
+        blue <br>
+        teal <br>
+        aqua <br><br>
+    </p>
+    <p>
+        #____ text fonts --> recommended to have fallback incase 1st not available <br>-------------<br>
+        p { <br>
+        .... font-family: "Courier New", monospace; <br>
+        } <br><br>
+
+        # text transformation --> used to correct capitalization of the text content <br>-----------------<br>
+        p { <br>
+        .... text-transform: uppercase <br>
+        .... text-transform: lowercase <br>
+        .... text-transform: capitalize <br>
+        } <br><br>
+
+        # text decoration property --> used to apply add. decoration to text<br>
+        such as underline or overline or strikethough or line-through <br>
+        p { <br>
+        .... text-decoration: underline red solid 5px; <br>
+        } <br><br>
+
+        p { <br>
+          text-decoration-line: underline; <br>
+          text-decoration-color: red; <br>
+          text-decoration-style: solid; <br>
+          text-decoration-thickness: 5px; <br>
+        } <br><br>
+
+        # examples: <br>
+        text-decoration-style: double <br>
+        text-decoration-style: solid <br>
+        text-decoration-style: dotted <br>
+        text-decoration-style: dashed <br>
+        text-decoration-style: wavy <br>
+
+    </p>
+</body>
+</html>
