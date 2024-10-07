@@ -156,5 +156,89 @@
         text-decoration-style: wavy <br>
 
     </p>
+    <p>
+        #___ box model intro <br>-------------<br><br>
+        | margin --> seperates the element from neighbor elements <br>
+        |---------<br>
+        | border --> goes around the padding & content  <br>
+        |---------<br>
+        | padding <br>
+        |---------<br>
+        | content --> actual content of the element <br><br>
+
+        #___ padding css examples: <br>
+        padding-top: 4px; <br>
+        padding-right: 2px; <br>
+        padding-bottom: 4px; <br>
+        padding-left: 2px;  <br><br>
+
+        padding box width = content width + padding left + padding right <br><br>
+
+        padding box height = content height + padding top + padding bottom <br><br>
+
+        border types: <br>
+        solid <br>
+        dashed <br>
+        dotted <br>
+        double <br><br>
+
+        border-width: thin <br>
+        border-width: medium <br>
+        border-width: thick <br> <br>
+
+        border box width = padding width + border left + border right <br><br>
+
+        border box height = padding height + border top + border bottom <br><br>
+
+        <sup>CSS rules: margin size</sup>  <br>
+        margin-top: 4px; <br>
+        margin-bottom: 1px; <br>
+        margin-left: 5px; <br>
+        margin-right: 2px; <br><br>
+
+    </p>
+    <p>
+        #__ alignment basics <br>--------------<br>
+        text-align: center; <br>
+        text-align: left; <br>
+        text-align: right; <br>
+        text-align: justify; <br>
+    </p>
+    <p>
+        #-- element center alignment demo <br>-------------------------<br>
+        < div class="parent"> <br>
+        .... < div class="child"> <br>
+        .... < /div> <br>
+        < /div>  <br><br>
+
+        <sup>CSS rules:</sup> <br>
+        .parent { <br>
+        .... border: 4px solid red; <br>
+        } <br><br>
+
+        .child { <br>
+        .... display: block; <br>
+        .... width: 50%; <br>
+        .... padding: 20px; <br>
+        .... border: 4px solid green; <br>
+        .... margin: auto; <br>
+        .... margin-left: auto; <br>
+        .... margin-right: auto; <br>
+        } <br><br>
+
+        # to align the element to the center, when margin set to auto, the auto will get the browser to auto find based on space <br>
+
+        # using the float property for a selector, will display the text to the side chosen of the picture <br>
+        < div class="parent"> <br>
+        .... < img src="photo.png" class="child"> text here here here its 714am> <br>
+        < /div> <br><br>
+
+        .child { <br>
+        ... float: right; <br>
+        } <br><br>
+
+
+    </p>
+
 </body>
 </html>
