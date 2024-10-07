@@ -18,7 +18,8 @@ list_three = ["Jesus", "Jessica"]
 
 def fashionably_late(arrivals, name):
     """define local variables here"""
-    half_pty = len(arrivals) // 2
+    half_pty = len(arrivals) // 2  # <class 'int'>
+    hal_str_pty = str(half_pty)    # <class 'str'>
     mid_points = ()
     first_gp = arrivals[:half_pty]
     aft_mid_not_last = arrivals[half_pty:-1]
@@ -38,19 +39,18 @@ def fashionably_late(arrivals, name):
     # to chk if in the section
     if name in aft_mid_not_last:
         return True
-    elif name in spliced_list:
-        return True
+    # elif name in spliced_list:
+    #     return True
     elif name in first_gp:
         return False
     elif name in last_ppl:
         return False
 
 
+    print("mid points are: " + mid_points)
+
+
 hh = fashionably_late(list_tt, 'Charlie')
 print(hh)
 kk = fashionably_late(list_one, 'May')
 print(kk)
-
-
-
-
