@@ -5,6 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        p {border: blue 2px dashed; color: blue; padding-left: 15px; padding-top: 15px;}
+
+    </style>
     <title>1009 js and css demo practice</title>
 </head>
 <body>
@@ -63,7 +67,71 @@
 
     </p>
     <p>
-        #___    <br>
+        #___ operators in JS    <br>---------------<br>
+        Logical AND operator: && --> used to confirm if multiple comparisons are true <br><br>
+
+        Logical OR operator: || --> when to chk if at least one of given comparisons is true  <br><br>
+
+        Logical NOT operator: !  --> think of as switch, flips the boolean value from T to F or F to T<br><br>
+
+        The modulus operator: %    <br><br>
+
+        The equality operator: ==   <br><br>
+
+        The strict equality operator: ===    <br><br>
+
+        The inequality operator: !=   <br><br>
+
+        The strict inequality operator: !==   <br><br>
+
+        The addition assignment operator: +=    <br><br>
+
+        The concatenation assignment operator: += (it's the same as the previous one - more on that later)  <br><br>
+
+        ex2. check if time is between certain numbers using AND && <br>-------------------<br>
+        var currentTime = 10;  <br>
+        console.log(currentTime > 9 && currentTime < 17);  <br><br>
+
+        ex3. check if time is either or ||  <br>---------------<br>
+        var currentTime = 7; <br>
+        console.log(currentTime < 9 || currentTime > 17);  // either x<9 or x>17  <br><br>
+
+        ex4. check using the NOT !  operator <br>---------------------<br>
+        var petHungry = true;  <br>
+        console.log('Fed the pet some food') <br>
+        console.log('Pet is hungry: ', !petHungry);   // Pet is hungry: false  <br><br>
+
+        ex5 using modulus operator <br>-----------------<br>
+        // store has 5 tables w/ 4 chairs each  <br>
+        // 22 people show up, how many will not be able to sit <br>
+        console.log(22 % 5);    // 2  <-- will not sit  <br><br>
+
+        ex6  using the +=  operator  <br>-------------------------<br>
+        used when want to accumulate the values stored in a variable  <br>
+        var mon = 1; <br>
+        var tue = 2; <br>
+        var wed = 1; <br>
+        var thu = 2;  <br>
+        var fri = 3;  <br>
+        console.log(mon + tue + wed + thu + fri);   // 9  <br><br>
+
+        //simplify the above code using the += <br>
+        var overtime = 1; <br>
+        overtime +=2;  <br>
+        overtime +=1;  <br>
+        overtime +=2;  <br>
+        overtime +=3;  <br>
+        console.log(overtime);   // 9 <br><br>
+
+        ex7 connecting strings using +=  <br>-----------------<br>
+        var longString = "";  <br>
+        longString += "Once";  <br>
+        longString += " upon";  <br>
+        longString += " a";  <br>
+        longString += " time";  <br>
+        longString += "...";  <br>
+        console.log(longString);   // "Once upon a time..." <br><br>
+
 
     </p>
     <p>
