@@ -9,7 +9,9 @@
 </head>
 <body>
     <h1> Ports demo</h1>
-    <p>
+    <a href="#botm">Link to page end</a>
+    <p id="topg">
+
       #_____  Ports --> used to identify protocols  <br>------------------<br>
       used to identify different types of data during transmission <br>
       assigned w/in the transport layer <br>
@@ -41,6 +43,17 @@
         SMTP (simple mail transfer protocol):  <br>
         |____ 25 <br>
         |___> used to send email <br>
+        |__> multiple message exchanges: <br>
+        |__> HELO --used to create the SMTP connection between client / server <br>
+        |__> MAIL FROM --who is sending the email <br>
+        |__> RCPT TO --reports the emails recipient <br>
+        |__> DATA --prepare & initiate the transfer of info between client /server <br>
+        |__> RSET -- reset the connection & clear all earlier transfer data w/o closing the SMTP connection <br>
+        |__> QUIT -- ends connection <br>
+        <br>
+        # the destination port is always the protocol being used  <br>
+        port: 587 allows data to be encrypted <br>
+
         <br>
         DNS (domain name service):  <br>
         |____ 53 <br>
@@ -55,12 +68,12 @@
 
     </p>
 
+    <h2>#_____  Network protocols are grouped into 3 categories  </h2>
     <p>
-        #_____  Network protocols are grouped into 3 categories  <br>------------------<br>
-        Network communication protocols <br>
+        <b>Network communication protocols</b> <br>
         |____>   <br>
         <br>
-        Network security protocols <br>
+        <b>Network security protocols </b> <br>
         |____> SSL (secure socket layer) -> standard encryption & security protocol <br>
         |<br>
         |____> TLS (transport layer security) -> replaces SSL & provides better security. <br>
@@ -68,9 +81,9 @@
         <br>
         HTTPS (hyper text transfer protocol secured) <br><br>
 
-        SSH (secure shell) --> cryptographic network security protocol <br>
+        SSH (secure shell) --> cryptographic network security protocol <br><br>
 
-        Network mgmt protocols <br>-----------------------<br>
+        <b>Network mgmt protocols</b> <br>-----------------------<br>
         used to monitor and manage devices and detect faults on performance issues <br>
         <br>
         SNMP (simple network mgmt protocol) --> allows for the collection of data from devices on your network <br>
@@ -96,12 +109,12 @@
 
     </p>
 
-    <p>
+    <p id="botm">
       #_____  Ports  <br>------------------<br>
 
 
     </p>
-
+    <a href="#topg">Link to page top</a>
 
 
 </body>
