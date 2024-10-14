@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1013 osi model demo  </title>
+    <style>
+        p {color: darkblue; border: 2px solid blue;}
+    </style>
+</head>
+<body>
+    <h1>1013 OSI model demo</h1>
+    <p>
+        #____ OSI (Open Systems Interconnection) model here  <br>-----------------<br>
+
+    </p>
+
+    <p>
+        #____ Application layer  here  <br>-----------------<br>
+        provides an interface w/ which u can access the network to perform the necessary tasks. <br>
+        to provide end-user services, such as file transfers, email, <br>
+        Data unit: data <br>
+        Protocols: HTTP, SMTP <br>
+    </p>
+
+    <p>
+        #____ Presentation layer here  <br>-----------------<br>
+        deals w/ data formatting, encryption, decryption, data presentation <br>
+        converts data into a usable format for the receiving app. <br>
+        establishes a common format for the data so it can be understood by both sender/receiver <br>
+        Data unit: data <br>
+        Protocols: HTTP, SMTP <br>
+    </p>
+
+    <p>
+        #____ Session layer  <br>-----------------<br>
+        responsible for managing communication sessions / states between applications <br>
+        Data unit: data <br>
+        Protocols: HTTP, SMTP <br>
+    </p>
+
+    <p>
+        #____ Transport layer  <br>-----------------<br>
+        establishes connections between devices & can ensure reliable transport between the two <br>
+        responsible for delivery of data between apps on seperate hosts <br>
+        Data unit: Segments <br>
+        Protocols: TCP, UDP <br>
+    </p>
+
+    <p>
+        #____ Network access layer  <br>-----------------<br>
+        selects the best path to route data packets over a network <br>
+        responsible for transmitting data between nodes on the same network <br>
+        addresses devices w/ IPv4 & IPv6 protocols <br>
+        Data unit: packets <br>
+        Protocols: IPv4, IPv6 <br>
+    </p>
+
+    <p>
+        #____ Data Link layer <br>-----------------<br>
+        Checks the data is ready to send making sure its reliable & error free <br>
+        Data unit: frames <br>
+        Protocols: Ethernet, WiFi <br>
+    </p>
+
+    <p>
+        #____ Physical layer  <br>-----------------<br>
+        converts the data into electrical signals for transmission thru cables or wireless thru air <br>
+        Data unit: bits <br>
+        Protocols: Ethernet, WiFi <br>
+
+    </p>
+
+    <h1> TCP / IP (transmission control protocol / internet protocol)</h1>
+    <p>
+        #____ how TCP/IP works  <br>--------------------<br>
+        1 --> break data into packets <br>
+        2 --> sending packets <br>
+        3 --> receiving packets <br>
+        4 --> checking for errors <br><br>
+
+        for each segment of data: <br>
+        sequence number --> order of the packets <br>
+        acknowledgment number (ACK) --> used to check if packages arrived <br>
+    </p>
+
+    <p>
+        #____ TCP/IP stack 4 layers:  <br>--------------------<br>
+
+    </p>
+
+    <p>
+        #____ Application layer  <br>--------------------<br>
+        deals w/ apps running on devices and data they generate <br>
+        Data unit: data <br>
+        Protocols: HTTP, SMTP <br>
+        <br>
+        processes associated w/ OSI model: <br>
+        Application  <br>
+        Presentation  <br>
+        Session  <br>
+
+        #____ Application layer  here  <br>-----------------<br>
+        provides an interface w/ which u can access the network to perform the necessary tasks. <br>
+
+        #____ Presentation layer here  <br>-----------------<br>
+        deals w/ data formatting, encryption, decryption, data presentation <br>
+
+        #____ Session layer  <br>-----------------<br>
+        responsible for managing communication sessions / states between applications <br>
+
+    </p>
+
+    <p>
+        #____ Transport layer  <br>--------------------<br>
+        ensures data is sent reliably, using TCP/IP protocol <br>
+        Data unit: Segments <br>
+        Protocols: TCP, UDP <br>
+    </p>
+
+    <p>
+        #____ Internet layer  <br>--------------------<br>
+        forwards packets from source to destination <br>
+        Data unit: packets <br>
+        Protocols: IPv4, IPv6 <br>
+    </p>
+
+    <p>
+        #____ Network interface layer  <br>--------------------<br>
+        a.k.a  Data link layer <br>
+        physical link between the computer & network <br>
+        sends & receives data over the network using hardware <br>
+        Protocols: ethernet, WiFi <br>
+         <br>
+        processes associated w/ OSI model: <br>
+        Data link layer   <br>
+        |__>  Data unit: frames <br>
+        Physical layer  <br>
+        |__> Data unit: bits <br>
+    </p>
+
+
+
+</body>
+</html>
