@@ -162,7 +162,18 @@
     </p>
 
     <p>
-      #_____  Ports  <br>------------------<br>
+        #_____  Firewall types  <br>------------------<br>
+        Packet filtering firewall -- inspect each data packet as it travels thru a network <br>
+        Application-layer firewall -- target applications & monitor their behaviors <br>
+        Circuit-lvl firewalls -- check weather TCP & UDP connections are valid before data is exchanged <br>
+        proxy server firewalls -- server can monitor, filter, cache data request to/from a network <br>
+        |__> client --> proxy server --> internet <br>
+        stateful firewalls --  inspect connections of a network <br>
+        |__> monitors all packets that go thru it, & stores info about the packets in a state table <br>
+        |__> state table -- tracks sessions by recording port numbers as sessions start from inside the network <br>
+        NGFW (next generation firewall) -- use of AI and ML to examine the payload for each packet<br>
+        & inspect for suspicious characters or malware <br>
+        <br>
 
 
     </p>
