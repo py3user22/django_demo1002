@@ -25,13 +25,37 @@
         Protocols: pick which want to use for data transmissions<br>
         _____ port <br>
         HTTP:___ 80 <br>
-        HTTPS:_ 443  <br>
+        HTTPS (http w/ Secure socket layer ):  <br>
+        |____>  443  <br>
+        |__> secure web page retrieval <br><br>
+
+        ISAKMP (internet security association & key mgmt protocol / IKE (internet key exchange)<br>
+        |____> 500 <br>
+        |__> authentication <br><br>
+
+        LDAPS (lightweight directory access protocol over TLS/SSL ) <br>
+        |____> 636 <br>
+        |__> secure authN services<br>
+        <br>
         FTP (file transfer protocol): <br>
         |____ 21, 20 <br>
+        |__> data transfer <br>
+        <br>
+        FTP over TLS/SSL <br>
+        |____> 989/990 <br>
+        |__> secure data transfer <br>
+
+        <br>
         Telnet:  <br>
         |____ 23 <br>
+        |__> remote device access <br>
+
+        <br>
         SSH (secure shell):  <br>
         |____ 22 <br>
+        |__> secure remote device access <br>
+
+        <br>
         POP3 (post office protocol 3):  <br>
         |____ 110 <br>
         |___> used to receive email <br>
@@ -57,12 +81,24 @@
         <br>
         DNS (domain name service):  <br>
         |____ 53 <br>
-        TFTP (): <br>
+        |__> name to IP address resolution <br>
+
+        <br>
+        TFTP (trivial file transfer protocol): <br>
         |____ 69 <br>
-        DHCP (dynamic host control protocol):<br>
+        |___> usage: booting devices via the network <br>
+
+        <br>
+        DHCP (dynamic host configuration protocol):<br>
         |____ 67, 68 <br>
+        |__> dynamic IP address assignment <br>
+
+        <br>
         NTP(network time protocol): <br>
         |____ 123 <br>
+        |__> keeps time for the network <br>
+
+        <br>
         Syslog: 514 <br>
 
 
@@ -98,8 +134,18 @@
     </p>
 
     <p>
-      #_____  Ports  <br>------------------<br>
+        #_____  Ports  <br>------------------<br>
+        range: 0 - 65535 <br>
+        port authority: IANA (internet assigned numbers authority) <br>
+        3 section ranges: <br>
+        Well-known ports (0 - 1023)<br>
+        |--> reserved for specific protocols & services used by system processes & apps <br>
+        |--> reserved for the most commonly used & popular protocols in computer networks <br>
+        <br>
+        Registered ports (1024 - 49151) -- used for specific services or protocols<br><br>
 
+        Dynamic or private ports (49152 - 65535) -- used by client apps to connect to servers<br>
+        |__> & are temp. assigned for the session duration <br>
 
     </p>
 
