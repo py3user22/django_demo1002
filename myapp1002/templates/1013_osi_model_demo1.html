@@ -21,8 +21,33 @@
         #____ Application layer  here  <br>-----------------<br>
         provides an interface w/ which u can access the network to perform the necessary tasks. <br>
         to provide end-user services, such as file transfers, email, <br>
+        identifies the specific protocol required by the application <br>
         Data unit: data <br>
-        Protocols: HTTP, SMTP <br>
+        Protocols: <br>
+        _____ port <br>
+        HTTP:___ 80 <br>
+        HTTPS:_ 443  <br>
+        FTP (file transfer protocol): <br>
+        |____ 21, 20 <br>
+        Telnet:  <br>
+        |____ 23 <br>
+        SSH (secure shell):  <br>
+        |____ 22 <br>
+        POP3 (post office protocol 3):  <br>
+        |____ 110 <br>
+        IMAP4 (interactive mail access protocol):  <br>
+        |____ 143 <br>
+        SMTP (simple mail transfer protocol):  <br>
+        |____ 25 <br>
+        DNS (domain name service):  <br>
+        |____ 53 <br>
+        TFTP (): <br>
+        |____ 69 <br>
+        DHCP (dynamic host control protocol):<br>
+        |____ 67, 68 <br>
+        NTP(network time protocol): <br>
+        |____ 123 <br>
+        Syslog: 514 <br>
     </p>
 
     <p>
@@ -31,22 +56,23 @@
         converts data into a usable format for the receiving app. <br>
         establishes a common format for the data so it can be understood by both sender/receiver <br>
         Data unit: data <br>
-        Protocols: HTTP, SMTP <br>
+        Protocols: HTTP: port 80, SMTP: port 25 <br>
     </p>
 
     <p>
         #____ Session layer  <br>-----------------<br>
         responsible for managing communication sessions / states between applications <br>
         Data unit: data <br>
-        Protocols: HTTP, SMTP <br>
+        Protocols: HTTP: port 80, SMTP: port 25 <br>
     </p>
 
     <p>
         #____ Transport layer  <br>-----------------<br>
         establishes connections between devices & can ensure reliable transport between the two <br>
         responsible for delivery of data between apps on seperate hosts <br>
+        assigns the port numbers to identify types of data during transmission <br>
         Data unit: Segments <br>
-        Protocols: TCP, UDP <br>
+        Protocols: TCP: protocol 6, UDP: protocol 17 <br>
     </p>
 
     <p>
