@@ -18,7 +18,7 @@
     </p>
 
     <p>
-        #____ Application layer  here  <br>-----------------<br>
+        #__7__ Application layer  here  <br>-----------------<br>
         provides an interface w/ which u can access the network to perform the necessary tasks. <br>
         to provide end-user services, such as file transfers, email, <br>
         identifies the specific protocol required by the application <br>
@@ -48,10 +48,17 @@
         NTP(network time protocol): <br>
         |____ 123 <br>
         Syslog: 514 <br>
+        <br>
+        SNMP (simple network mgmt protocol) <br>
+        |--> can secure devices on LAN or WAN <br>
+        |--> 3 components: <br>
+        |____> Manager -- is the client <br>
+        |____> Agent -- is the server  <br>
+        |____> Mgmt info base (MIB) -- is the database  <br>
     </p>
 
     <p>
-        #____ Presentation layer here  <br>-----------------<br>
+        #__6__ Presentation layer here  <br>-----------------<br>
         deals w/ data formatting, encryption, decryption, data presentation <br>
         converts data into a usable format for the receiving app. <br>
         establishes a common format for the data so it can be understood by both sender/receiver <br>
@@ -60,14 +67,17 @@
     </p>
 
     <p>
-        #____ Session layer  <br>-----------------<br>
+        #__5__ Session layer  <br>-----------------<br>
         responsible for managing communication sessions / states between applications <br>
         Data unit: data <br>
         Protocols: HTTP: port 80, SMTP: port 25 <br>
+        SSL (secure socket layer) --encrypts data, authenticates data origins, ensures data integrity <br>
+        <br>
+        DTLS (datagram communication security protocol based on TLS)
     </p>
 
     <p>
-        #____ Transport layer  <br>-----------------<br>
+        #__4__ Transport layer  <br>-----------------<br>
         establishes connections between devices & can ensure reliable transport between the two <br>
         responsible for delivery of data between apps on seperate hosts <br>
         assigns the port numbers to identify types of data during transmission <br>
@@ -76,23 +86,32 @@
     </p>
 
     <p>
-        #____ Network access layer  <br>-----------------<br>
+        #__3__ Network access layer  <br>-----------------<br>
         selects the best path to route data packets over a network <br>
         responsible for transmitting data between nodes on the same network <br>
         addresses devices w/ IPv4 & IPv6 protocols <br>
         Data unit: packets <br>
         Protocols: IPv4, IPv6 <br>
+        IPSec -- protocol & algorithm suite that secures data transferred over public networks like internet<br>
+        |--> originally contained the ESP & AH protocols <br>
+        |--> can protect sensitive data & VPNs providing tunneling to encrypt data transfers<br>
+        |--> can encrypt at the app layer 7. <br>
+        <br>
+        ESP (encapsulating security payload) --> encrypts data & provides authN <br>
+        AH (authN header) --> offers anti-replay capabilities & protects data integrity <br>
+
+        <br>
     </p>
 
     <p>
-        #____ Data Link layer <br>-----------------<br>
+        #__2__ Data Link layer <br>-----------------<br>
         Checks the data is ready to send making sure its reliable & error free <br>
         Data unit: frames <br>
         Protocols: Ethernet, WiFi <br>
     </p>
 
     <p>
-        #____ Physical layer  <br>-----------------<br>
+        #__1__ Physical layer  <br>-----------------<br>
         converts the data into electrical signals for transmission thru cables or wireless thru air <br>
         Data unit: bits <br>
         Protocols: Ethernet, WiFi <br>
