@@ -50,7 +50,9 @@
         Azure Stream Analytics -- real time data streaming service to analyze & process large data amounts  <br><br>
 
         Azure Data Lake Analytics -- distributed analytics service to perform big data analysis on large scale  <br>
-        |__> can process & analyze data from social media, IoT, logs from web servers
+        |__> can process & analyze data from social media, IoT, logs from web servers<br><br>
+
+        ex1. online shopping website using the cloud to identify customer buying trends <br>
     </p>
 
 
@@ -67,16 +69,45 @@
 
     </p>
 
+    <h3>Hypervisors and VMs </h3>
     <p>
-        #____   <br>--------------<br>
+        Hypervisor --> virtualization software that is run on the physical host machine
+    </p>
+    <p>
+        #____ 2 types:   <br>--------------<br>
+        type 1 -- bare meal hypervisors <br>
+        |.. directly installed on host machines hardware <br>
+        |.. ex1. VMware, ESXI, Microsoft Hyper V, Citrix Xen server <br>
+        |.... WSL (windows subsystem for Linux) -- uses hyper V architecture <br><br>
+
+        type 2 -- hosted hypervisors <br>
+        |.. run ontop of a host OS <br>
+        |.. mainly used for desktop virtualization, test env., personal use <br>
+        |.. ex1. Oracle VirtualBox, VMware, Workstation, Parallels desktop <br>
+
 
     </p>
 
+    <h3>VMs and containers demo</h3>
     <p>
-        #____   <br>--------------<br>
+        #____ VM (virtual machine)  <br>--------------<br>
+        a.k.a. virtual server --> software system that works like a single virtual pc <br>
+        can split the physical machine or server into multiple VMs <br>
+        each sharing resources such as RAM, CPU, and network.  <br>
+        ex1. VMware Workstation, VirtualBox, Hyper-V <br><br>
 
+        #____ Containers <br>------------------------<br>
+        lightweight software package providing isolated env. for running apps <br>
+        each container shares the underlying OS w/ the host machine <br>
+        each container has its own file system, network, app space <br>
+        ex1. Docker, Kubernetes, Podman
     </p>
 
+    <h3>Azure Cognitive services</h3>
+    <p>
+        #____ cloud based service that allows devs to build intelligent apps. <br>
+        uses AI to analyze customer data <br>
+    </p>
 
 </body>
 </html>
