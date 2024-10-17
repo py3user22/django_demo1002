@@ -92,6 +92,11 @@
         DHCP (dynamic host configuration protocol):<br>
         |____ 67, 68 <br>
         |__> dynamic IP address assignment <br>
+        |__ DHCP process to connect to servers 4 steps: <br>
+        |__> DHCP Discover <br>
+        |__> DHCP Offer    <br>
+        |__> DHCP Request <br>
+        |__> DHCP Acknowledgment <br>
 
         <br>
         NTP(network time protocol): <br>
@@ -138,7 +143,12 @@
         ICMP (internet control message protocol) <br>
         |__> allows network-connected devices to send warning & error messages <br>
         |__> also connect request failures/success, or unavailable <br>
-        |__> not used to get/send data to/from devices on the network <br>
+        |__> not used to get/send data to/from devices on the network <br><br>
+
+        SIP (session initiation protocol) --> used to start, maintain, end real time communication sessions<br>
+        .. ex1. voice over the internet (VoIP) <br>
+        ... port: 5060 --> default, bulk of VoIP non encrypted connections <br>
+        ... port: 5061 --> uses TLS encryption for secure communications<br><br>
 
 
     </p>
@@ -179,8 +189,10 @@
     </p>
 
     <p id="botm">
-      #_____  Ports  <br>------------------<br>
+      #_____  Identify protocols & sessions on Windows  <br>------------------<br>
+        netstat -a  --> gets current sessions & protocols <br><br>
 
+        netstat  --> displays http or https as protocols when typed
 
     </p>
     <a href="#topg">Link to page top</a>
