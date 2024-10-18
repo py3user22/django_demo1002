@@ -1,0 +1,9 @@
+p {
+    color: darkblue; border: blue 2px solid; padding: 5px 0 5px 10px;
+}
+
+h1 { color: blue; text-decoration: underline; text-align: center; }
+
+h3 { color: blue; text-align: center; text-decoration: underline; }
+
+a:hover {color: aqua; border: dashed 1px green; padding: 3px 15px 3px 4px;}

@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1017_css_adds.css">
     <title>1017 JS notes demo</title>
 </head>
 <body>
@@ -31,15 +32,95 @@
         }  <br>
         else {   <br>
         .. console.log('Just right')   <br>
+        }  <br><br>---------------------ex3.----<br>
+
+        //converting the previous if-else example with switch-case<br>
+        switch(light) {  <br>
+        .. case 'green':  <br>
+        ...... console.log("Drive");  <br>
+        ...... break;  <br>
+        .. case 'orange':  <br>
+        ...... console.log("Get ready");   <br>
+        ...... break;  <br>
+        .. case 'red':  <br>
+        ...... console.log("Don't drive");  <br>
+        ...... break;  <br>
+        .. default:  <br>
+        ...... //this block will run if no condition matches  <br>
+        ...... console.log('The light is not green, orange, or red'); <br>
+        ...... break; <br>
+        }  <br><br>---------------------ex4.----<br>
+
+        var age = 10; <br>
+        if (age >= 65) {   <br>
+        .. console.log('You get your income from your pension')  <br>
+        } else if (age < 65 && age >= 18) {  <br>
+        .. console.log('Each month you get a salary')  <br>
+        } else if (age < 18) { <br>
+        .. console.log('You get an allowance')   <br>
+        } else {  <br>
+        //this block will run if no condition matches   <br>
+        .. console.log('The value of the age variable is not numerical')   <br>
+        } <br>
+
+        <br><br>---------------------ex5.----<br>
+var day = 'Sunday';
+switch(day) {
+   case 'Monday':
+       console.log('Do something');
+       break;
+   case 'Tuesday':
+       console.log('Do something');
+       break;
+   case 'Wednesday':
+       console.log('Do something');
+       break;
+   case 'Thursday':
+       console.log('Do something');
+       break;
+   case 'Friday':
+       console.log('Do something');
+       break;
+   case 'Saturday':
+       console.log('Do something');
+       break;
+   case 'Sunday':
+       console.log('Do something');
+       break;
+   default:
+       //this block will run if no condition matches
+       console.log('There is no such day');
+}
+    </p>
+
+    <h3>  Loops demo </h3>
+    <p>
+        #____ for loops  --> continually executes repeated blocks of code until a certain condition is satified   <br>------------------<br>
+        i  --> common counter used in JS  <br>
+        |__> used by loop to know when to start or stop <br><br>
+
+
+        for (var i = 1; i<101; i++) { <br>
+        .. console.log(i);  <br>
+        }   <br><br>
+
+        1| set the value -->   var i = 0;  <br>
+        2| specify the condition -->   i < 3;   <br>
+        3| increment the counter -->   i++  <br><br>
+
+        #____ while loop --> will run as long as the condition returns true   <br>
+        |__> the counter is set outside the while loop  / global variable  <br>
+        |__> the increment is done inside the loops body   <br>
+
+        -----------------<br>
+        var i = 1;  <br>
+
+        while (i < 4) {  <br>
+        .. console.log(i);   <br>
+        .. i=i+1;   <br>
         }  <br>
 
 
-
-    </p>
-
-    <h3>  section </h3>
-    <p>
-        #____ para  <br>------------------<br>
 
     </p>
 
