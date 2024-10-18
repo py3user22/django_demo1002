@@ -78,3 +78,45 @@ distance(2,2,5,6)    # 5.0
 
 print(8/-2)  # -4.0
 
+
+def project_to_distance(point_x, point_y, distance):
+    dist_to_origin = (point_x ** 2 + point_y ** 2) ** 0.5
+    scale = distance / dist_to_origin
+    print(point_x * scale, point_y * scale)
+
+
+project_to_distance(2, 7, 4)
+
+
+def funkyx(x):
+    lookout = -5 * x ** 5 + 67 * x ** 2 - 47
+    print(lookout)
+
+
+funkyx(0)  # -47
+funkyx(1)  # 15
+funkyx(2)  # 61
+funkyx(3)  # -659
+
+
+def future_value(present_value, annual_rate, periods_per_year, years):
+    """
+    FV = PV(1 + rate)^periods
+    Input: the numbers present_value, annual_rate, periods_per_year, years
+    Output: future value based on formula given in question
+    """
+    rate_per_period = annual_rate / periods_per_year
+    periods = periods_per_year * years
+
+    # Put your code here.
+    future_value = present_value * (1 + rate_per_period) ** periods
+    print(future_value)
+
+future_value(500,.04,10,10)  # 745.3174
+future_value(1000,.02,365,4)
+
+
+def area_triangle(side):
+    print((math.sqrt(3) / 4) * (side ** 2))
+
+area_triangle(5)
