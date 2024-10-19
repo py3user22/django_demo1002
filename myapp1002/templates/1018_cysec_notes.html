@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1018 network security controls: Technical controls</title>
+    <link rel="stylesheet" href="1017_css_adds.css">
+</head>
+<body>
+    <h1 id="topg">Network security controls: Technical controls demo notes</h1>
+    <a href="#botp">link to page bottom</a>
+
+    <p>
+        #____ IDS/IPS types --> Intrusion detect system / Intrusion prevent system   <br>----------------------<br>
+        IDS --> 2 types: <br>
+        HIDS --> host-based IDS (intrusion detect system) <br>
+        |__> installed on a host or VM & monitors host activity, <br>
+        |__> analyes the files, data, in/out traffic <br>
+        |__> takes snapshot of the existing files in the system, & compares to a previous copy to compare against each other <br>
+        .. if the shots differ, potential attack <br>
+        <br>
+        NIDS --> network-based IDS <br>
+        |__> monitors network traffic <br>
+
+    </p>
+
+    <h3>IPS (intrusion prevent system)</h3>
+    <p>
+        #____ IPS types   <br>----------------------<br>
+        |.. includes AV (antivirus), anti-malware, <br>
+        |.. constant monitoring of the system, and can prevent, report, block, drop it. <br>
+        <br>
+        NIPS (network-based IPS) -->  <br>
+
+
+        <br>
+        WIPS (wireless IPS)  --> monitors wifi network  <br>
+
+        <br>
+        HIPS (host-based IPS) --> installed at endpoints like PCs <br><br>
+
+        NBA (network behavior analysis)
+
+    </p>
+
+    <h3>Proxy servers and types</h3>
+    <p>
+      #____  intermediary -- system or router that provides a gateway between users and internet  <br>----------------------<br>
+        can be setup as a filter or firewall  <br>
+        escentially a computer on the internet w/ a IP address of its own <br><br>
+
+        types: <br>
+        transparent proxy  --> gives an identical exp. to what u would have if using home network <br>
+        <br>
+        SOCK proxy --> a.k.a. socket --> operates at the TCP level & works by channeling your traffic thru a proxy server <br>
+        .. which then passes the info to intended destination.  <br><br>
+
+        Anonymous proxy --> focuses on making internet activity untracable<br>
+        .. access the internet on behalf of the user while hiding id & pc info.  <br><br>
+
+        Reverse proxy --> sits in front of clients web servers, and forwards request from a browser to web servers <br>
+        .. intercepts requests from user at network edge of web browser.
+
+
+    </p>
+
+    <h3>VPN (virtual private networks) </h3>
+    <p>
+      #____ a service that protects your internet connection & online privacy   <br>----------------------<br>
+        creates a encrypted tunnel for your data, the key is known by your device <br>
+        protects privacy by hiding the IP address of your device & allows to use public WiFi hotspots <br>
+        <br>
+        VPN components <br>
+        VPN client <br>
+        network access server <br>
+        tunnel terminating device <br>
+        VPN protocol  <br><br>
+
+        2 types: <br>
+        Remote access VPN  --> usually a tablet <br>
+        site-2-site VPN --> typically used for branch offices to main branch<br><br>
+
+        Core functions of VPN: <br>
+        encapsulation <br>
+        encryption <br>
+        authentication
+    </p>
+
+    <h3>Encapsulation protocols</h3>
+    <p>
+      #____ PPTP (point-2-point  tunneling protocol)    <br>----------------------<br>
+        L2TP (layer 2 tunneling protocol) w/ IPsec <br>
+        SSTP (secure socket tunneling protocol)  <br>
+        Open VPN
+    </p>
+
+    <a id="botp" href="#topg">Link to top page</a>
+
+</body>
+</html>
