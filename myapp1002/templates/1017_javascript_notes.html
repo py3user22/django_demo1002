@@ -152,27 +152,172 @@ switch(day) {
 
     </p>
 
-    <h3>  section </h3>
+    <h3>  Functions </h3>
     <p>
-        #____ para  <br>------------------<br>
+        #____ take several lines of code that performs a set of related actions, groups together under a single label <br>
+        declare a function by typing keywork --> function <br>
+        call a function by typing the function name followed by the () -- open/close parentheses <br>
+        ------------------<br>
+        ex.<br>
+        function addTwoNums() { <br>
+        .. // Code goes here <br>
+        } <br><br>
+
+        ex.1<br>
+        function addTwoNums() { <br>
+        <br>
+        .. var a = 10;  <br>
+        .. var b = 20;  <br>
+        .. var c = a + b;  <br>
+        .. console.log(c)  <br>
+        }  <br><br>
+
+        // call the function<br>
+        addTwoNums();   // 30 <br><br>
+
+
+
+        ex2.<br>
+        function myFunc() { <br>
+        .. console.log("Hola World"); <br>
+        } <br><br>
+
+        // call the function <br>
+        myFunc(); <br><br>
+
+        ex3. function parameters demo<br>-----------------------<br>
+        function addTwoNums(a,b) {  <br>
+        .. var c = a + b;   <br>
+        .. console.log(c);  <br>
+        }  <br><br>
+
+        // values passed to the function are called 'arguments' <br>
+        addTwoNums(2,2);    // 4  <br><br>
 
     </p>
 
-    <h3>  section </h3>
+    <h3>  Array [] -- data storage </h3>
     <p>
-        #____ para  <br>------------------<br>
+        #____ set in specific sequence called index values, can be rearranged   <br>------------------<br>
+        starts at zero, so a loops starts w/ a 0 counter value also... <br><br>
+
+        // open list w/ nothing in it <br>
+        var train1 = []   <br><br>
+
+        // add items to the array <br>
+        var train1 = ["wheat", "barley", "potato", "salt", "rocks"];  <br><br>
 
     </p>
 
-    <h3>  section </h3>
+    <h3>  Calling functions and for loops demo </h3>
     <p>
-        #____ para  <br>------------------<br>
+        #____ code simple functions that can accept an array & iterate thru it  <br>------------------<br>
+        function listArrayItems(arr) { <br>
+        .. // add code here  <br>
+        } <br><br>
+
+        'for loop' needs the following info: <br>-------------------<br>
+        1. starting loop counter value  --> variable i  <br>
+        2. exit condition  <br>
+        3. how to update the value of i after each loop  <br><br>
+
+        function listArrayItems(arr) { <br>
+        .. // add code here  <br>
+        .. for (var i = 0; i < arr.length; i++) {  <br>
+        ...... console.log(arr[i])  // display the array item where the index is equal to i  <br>
+        .. }  <br>
+        }     <br><br>
+
+        ex2. <br>
+        var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];  <br><br>
+        //display all items in the array at once <br>
+        listArrayItems(colors);    <br><br>
+
+        red <br>
+        orange <br>
+        yellow<br>
+        green<br>
+        blue<br>
+        purple  <br>
+        pink  <br>
+
+        ex3. function that takes an array as input & display all items of the array <br>-------------------------<br>
+        function listArrayItems(arr) {  <br>
+        .. for (var i = 0; i < arr.length; i++) {  <br>
+        ...... console.log(i, arr[i])  <br>
+        .. } <br>
+        }    <br><br>
+
+        var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];  <br>
+        listArrayItems(colors);  <br>
+
+        0 'red'     <br>
+        1 'orange'  <br>
+        2 'yellow'  <br>
+        3 'green'   <br>
+        4 'blue'    <br>
+        5 'purple'  <br>
+        6 'pink'    <br><br>
+
+        ex4. to start the count from 1 instead of 0 --> update the function declaration <br>--------------------------<br>
+        function listArrayItems(arr) {  <br>
+        .. for (var i = 0; i < arr.length; i++) {  <br>
+        ...... console.log(i+1, arr[i])  <br>
+        .. } <br>
+        }    <br><br>
+
+        1 'red'     <br>
+        2 'orange'  <br>
+        3 'yellow'  <br>
+        4 'green'   <br>
+        5 'blue'    <br>
+        6 'purple'  <br>
+        7 'pink'    <br><br>
+
+        ex5. add 1 or more conditions, <br>------------------------<br>
+        function listArrayItems(arr) {   <br>
+        .. for (var i = 0; i < arr.length; i++) {   <br>
+        ...... if (arr[i] == 'red') {  <br>
+        ..........  console.log(i*100, "tomato!")  <br>
+        ...... } else {   <br>
+        ..........  console.log(i*100, arr[i])  <br>
+        ...... }  <br>
+        .. }  <br>
+        }  <br><br>
+
+        0 'tomato!'  <br>
+        100 'orange' <br>
+        200 'yellow' <br>
+        300 'green'<br>
+        400 'blue'<br>
+        500 'purple'  <br>
+        600 'pink' <br>
+
 
     </p>
 
     <h3>  section </h3>
     <p id="botp">
-        #____ para  <br>------------------<br>
+        #____ letterFinder example demo1  <br>------------------<br>
+        function letterFinder(word, match) {  <br>
+        .. for (var i = 0; i < word.length; i++) {   <br>
+        ...... if (word[i] == match) {  <br>
+        ..........  console.log('Found the', match, 'at', i)  <br>
+        ...... } else {   <br>
+        ..........  console.log('--No match found at', i)  <br>
+        ...... }  <br>
+        .. }  <br>
+        }  <br><br>
+
+        letterFinder('test', 't')  <br><br>
+        Found the t at 0  <br>
+        ---No match found at 1  <br>
+        ---No match found at 2  <br>
+        Found the t at 3  <br><br>
+
+
+
+
 
     </p>
     <a href="#topg"> Link to top </a>
