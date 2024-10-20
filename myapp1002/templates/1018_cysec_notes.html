@@ -72,7 +72,7 @@
         creates a encrypted tunnel for your data, the key is known by your device <br>
         protects privacy by hiding the IP address of your device & allows to use public WiFi hotspots <br>
         <br>
-        VPN components <br>
+        VPN components: <br>
         VPN client <br>
         network access server <br>
         tunnel terminating device <br>
@@ -91,10 +91,122 @@
     <h3>Encapsulation protocols</h3>
     <p>
       #____ PPTP (point-2-point  tunneling protocol)    <br>----------------------<br>
-        L2TP (layer 2 tunneling protocol) w/ IPsec <br>
-        SSTP (secure socket tunneling protocol)  <br>
-        Open VPN
+        L2TP (layer 2 tunneling protocol) w/ IPsec <br><br>
+        SSTP (secure socket tunneling protocol)  <br><br>
+        Open VPN  -- uses AES256 bit encryption
     </p>
+
+    <h3>Encryption protocols in VPN</h3>
+    <p>
+      #____ 3DES (triple data encryption standard)   <br>----------------------<br>
+        SSTP (secure socket tunneling protocol)  <br><br>
+        Open VPN  -- uses AES256 bit encryption
+    </p>
+
+    <h3>Security in VPN main 4 technologies:</h3>
+    <p>
+        VPN Firewall --> usually installed at server end of VPN <br>
+        IPsec server --> handles encryption / decryption of data  <br>
+        AAA server --> authN, authR, Accounting (keeps track of user activity while logged in)-->    <br>
+        RADIUS server --> authenticates a VPN user
+    </p>
+
+    <h3>Virtualization types and info</h3>
+    <p>
+        #____ Types of virtualization <br>------------------<br>
+        Virtualization -- process of creating a software based or virtual representation of something rather than physical. <br>
+        allows to run multiple OS on a single physical machine.  <br>
+        sharing the resources of that single machine across the environments <br>
+
+        ex1.  apps, servers, storage, networks <br><br>
+
+        Full virtualization <br>
+        |__> allows multiple VM's to run on a host machine, each w/ own dedicated: <br>
+        |___> OS, kernel, virtual hardware <br>
+        |___> complete isolation between VM's <br>
+
+        <br>
+        OS level virtualization <br>
+        allows multiple instances of an app to run in isolated form of single OS.  <br><br>
+
+        Hybrid <br>
+        separates resources or services from a physical delivery system w/in a hybrid cloud <br>
+        Hybrid environments consist of 2 or more interconnected virtual, containers, private or public cloud environments <br>
+
+
+        <br>
+        Hardware-assisted   <br>
+        enables full virtualization using help from hardware, primarily host processes <br>
+        used to emulate a complete hardware env. or VM in which unmod'd guest OS using the<br>
+        same instructions as the host machine runs in complete isolation w/ listed components <br>
+
+
+        <br>
+        OS (operating system)-based   <br>
+
+        <br>
+        Network   <br>
+
+        <br>
+        Server virtualization   <br>
+        Desktop   <br>
+        |__> local & remote   <br>
+
+        Physical machine  <br>
+        hypervisor   <br>
+        mgmt console  <br>
+        mgmt server   <br>
+        virtual machine  <br>
+    </p>
+
+    <h3>Hypervisor</h3>
+    <p>
+        #____ an app or firmware that enables multiple guest Operating system to share a hosts hardware resources mgmt console <br>------------------<br>
+        used to access, config, manage the virtualization product<br>
+        a key component in OS virtualization <br>
+        software layer placed between hardware & the OS's of VMs <br>
+        manages on/off of VM <br>
+
+
+        Mgmt server --> component used to directly manage the VMs<br><br>
+
+        Virtual machine --> an independent instance of an OS created by VM monitor
+        functions as a self-contained system w/ own OS & apps resource allocation <br>
+
+    </p>
+
+    <h3>OS virtualization security</h3>
+    <p>
+        #____ subtitle <br>------------------<br>
+
+    </p>
+
+    <h3>title</h3>
+    <p>
+        #____ subtitle <br>------------------<br>
+
+    </p>
+
+    <h3>title</h3>
+    <p>
+        #____ subtitle <br>------------------<br>
+
+    </p>
+
+    <h3>title</h3>
+    <p>
+        #____ subtitle <br>------------------<br>
+
+    </p>
+
+    <h3>title</h3>
+    <p>
+        #____ subtitle <br>------------------<br>
+
+    </p>
+
+
+
 
     <a id="botp" href="#topg">Link to top page</a>
 
