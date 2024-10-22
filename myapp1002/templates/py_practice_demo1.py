@@ -120,3 +120,6 @@ def area_triangle(side):
     print((math.sqrt(3) / 4) * (side ** 2))
 
 area_triangle(5)
+
+
+
