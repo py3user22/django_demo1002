@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1017_css_adds.css">
+    <title>1024 cryptography notes </title>
+</head>
+<body>
+    <h1 id="topg">Cryptography & public key infrastructure</h1>
+    <a href="#botp">link to page bottom</a>
+    <h3>1024 Cryptography demo</h3>
+    <p>
+        #____ Cyptography techniques   <br>--------------------<br>
+        Encryption <br>----------------<br>
+        converts plain text into cyphertext, which can only be decoded by the intended receiver<br>
+        cipher --> mathematical formula that transforms plaintext into ciphertext<br>
+        <br>
+        Symmetric <br>
+        uses the same key to encrypt & decrypt data.  <br>
+        both sender/recipient have identical copies of key. <br>
+        Cipher text --> data is encrypted into cypher text, meaning no1 can read or understand w/o key <br>
+        <br>
+        Asymmetric <br>-- aka public key cryptography-------------<br>
+        type of encryption that uses a pair of keys to encrypt/decrypt data <br>
+        sender uses the recipients <em>public key</em> to encrypt the data<br>
+        public key is available to anyone <br>
+        only the private key is used to unlock the messages<br>
+        recipient uses the <b>private key</b> to decrypt it<br>
+
+        <br>
+        eliminates the need to exchange secret keys<br>
+        ex1.<br>
+        RSA<br>Diffy Hellman<br>ECC (Elliptic curve cryptography)<br><br>
+
+    </p>
+    <h3>DES (date encryption standard)</h3>
+    <p>
+        #____ types:  DES (symmetric)  <br>
+        breaks plain text input into 64 bit blocks to encrypt<br>
+        starts w/ IP (initial permutation)<br>
+        |_> splitting the block into LPT (left plain text) | IP | RPT (right plain text)<br>
+        |__> each having 16 rounds of encryption --> LPT @ 16 + RPT @ 16<br>
+        |___> rejoining the FP (final permutaion) to make the 64 bit cipher text <br>
+        <br>
+        DES uses a 64 bit key to encrypt these block w/ each 8 bits called parity bits used to check for errors in cypher text<br>
+
+
+    </p>
+    <h3>AES (advanced encryption standard)</h3>
+    <p>
+        #____ AES (symmetric)   <br>
+
+
+
+    </p>
+    <p>
+        #____    <br>
+
+
+    </p>
+    <p>
+        #____    <br>
+
+
+    </p>
+    <a id="botp" href="#topg">Link to top page</a>
+</body>
+</html>
