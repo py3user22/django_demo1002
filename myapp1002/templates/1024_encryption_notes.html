@@ -52,18 +52,53 @@
     <h3>AES (advanced encryption standard)</h3>
     <p>
         #____ AES (symmetric)   <br>
-
-
+        divides data into block of equal size, 128 bits<br>
+        1st round: involves byte substitution, shifting rows cyclically to the left mixed columns, adding another round<br>
+        key steps 4-7 are repeated for a # of rounds<br>
+        10 rounds for 128 bit keys<br>
+        12 rounds for 192 bit keys<br>
+        14 rounds for 256 bit keys<br>
+        <br>
+        after the rounds are completed, the final block is produced as cypher text<br>
+        so if get hold of the cipher text, u wont decrypt it w/o the correct key<br>
 
     </p>
+    <h3>RC4 encryption algorithm</h3>
     <p>
-        #____    <br>
-
+        #____ is a stream cipher & variable length key algorithm    <br>
+        that encrypts one bit at a time.  <br>
+        using a pseudorandom bit generator to produce an unpredictable 8 bit number<br>
+        combined w/ plain text stream cipher using XOR operation<br>
+        <br>
+        RC5 (symmetric) <br>-----------------<br>
+        known for simplicity, speed, memory consumption<br>
+        addresses 2 word blocks at a time<br>
+        can be defined based on input, plain text, block size, # of rounds, key size <br>
+        <br>
+        RC6 ( symmetric ) <br>----------------<br>
+        meets requires AES standards<br>
 
     </p>
-    <p>
-        #____    <br>
+    <h3>DSA (digital signature algorithm)</h3>
 
+    <p>
+        #____ public key crypto system used for digital signatures   <br>
+        system involves key generation where sender keeps their private key secret<br>
+        & signature generation<br>----------------<br>
+        sender creates a digital signature using their private key<br>
+        the receiver then verifies the messages authenticity using senders public key<br>
+        <br>
+        provides message authN, integrity, & non-repudiation<br>
+        ensuring message was sent by private key holder<br>
+
+    </p>
+    <h3>RSA ()</h3>
+    <p>
+        #____ RSA (asymmetric)<br>-----------------<br>
+        public key --> used for encryption   <br>
+        private key --> message can only be decrypted by private   <br>
+        <br>
+        most used asymmetric encryption algorithm <br>
 
     </p>
     <a id="botp" href="#topg">Link to top page</a>
