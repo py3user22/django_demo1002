@@ -9,7 +9,7 @@
     <title>1017 python notes</title>
 </head>
 <body>
-    <h1>1017 python notes </h1>
+    <h1>1025 python notes </h1>
     <a id="topg" href="#botp">link to bottom page</a>
 
     <h3> Print() vs return </h3>
@@ -25,15 +25,61 @@
 
     </p>
 
-    <h3>submod1</h3>
+    <h3>math model -> Collatz conjecture demo1</h3>
     <p>
-      #____    <br>----------------------<br>
+        #____ formula:   <br>----------------------<br>
+        if number is even, divide it by 2    <br>
+        if number is odd, triple it & add 1  <br>
+        <br>
+        f(n) = { n/2 if n % 2 == 0 }    <br>
+        ...... { 3n + 1 if n % 3 == 0 } <br>
+        <br>
+        <b>def</b> collatz(num):  <br>
+        .. if num % 2 == 0:  <br>
+        ...... div_num =  num / 2  <br>
+        ...... <i>return</i> div_num  <br><br>
+
+        .. if num % 3 == 0:  <br>
+        ...... mul_num = 3 * num + 1  <br>
+        ...... <i>return</i> mul_num  <br><br>
+
+
 
     </p>
 
-    <h3>submod1</h3>
+    <h3>not booleans </h3>
     <p>
-      #____    <br>----------------------<br>
+      #____ not (p or not q)   <br>----------------------<br>
+        1) p is True, q is True <br>
+        |--> not (T or not T) --> naughty naughty  <br>
+        |--> not true or false --> F<br><br>
+
+        2) p is True, q is False<br>
+        |--> not (T or not F) --> <br>
+        |--> not true or true --> False  <br>
+
+        3) p is False, q is True --> <br>
+        |--> not (F or not T) <br>
+        |--> not false or false --> True  <br>
+
+        4) p is False, q is False <br>
+        |--> not (F or not F) <br>
+        |--> not false or true --> False <br><br>
+
+        ex2<br>-which expressions evaluate to True?------<br>
+        bool1 = True <br>bool2 = False<br><br>
+
+        bool2 == (not bool1)   --> bool2 == False --> True <br>
+        not bool2 --> not false --> True  <br>
+        not not bool1 --> not (not True) --> not (False) --> True <br><br>
+
+        ex3<br>----which is logically equal to <br>
+        num1 >= num2 <br><br>
+
+        num1 is greater than, or equal to num2 <br>
+
+        not (num1 < num2) --> not (False) --> True <br>
+
 
     </p>
 
