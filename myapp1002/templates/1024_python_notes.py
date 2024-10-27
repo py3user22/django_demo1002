@@ -68,7 +68,64 @@ print(f"Collatz 0-14th sequence for {number2}: {collatz(number2)}")
 print("------------------------\n")
 
 
+import datetime
+
+
+date1 = datetime.datetime(2024, 10, 26)
+
+today = datetime.date.today()
+
+# can access the year, month, day using . notation
+match1 = today.year
+match2 = today.month
+match3 = today.day
 
 
 
+print(f"Today is {today}")  #
+print(date1)  # 2024-10-26
+print(match2)  # 10
+print("------------------------\n")
+
+
+#ex1 using function to convert string to integer
+
+
+def name_to_num(name: str) -> int:
+    """
+    take string name as input (rock, Spock, paper, lizard, scissors)
+    and returns integer 0-4
+    """
+    if name == "rock":
+        return 0
+    elif name == "Spock":
+        return 1
+    elif name == "paper":
+        return 2
+    elif name == "lizard":
+        return 3
+    elif name == "scissors":
+        return 4
+    else:
+        return "Name not found to match"
+
+
+print(name_to_num("rock"))    # 0
+print(name_to_num("Spock"))   # 1
+print(name_to_num("paper"))   # 2
+print(name_to_num("lizard"))  # 3
+print(name_to_num("scissors"))  # 4
+print(name_to_num("Jumps"))
+
+# run some test to make sure
+print(name_to_num("rock") == 0)    # True
+print(name_to_num("Spock") == 1)   # True
+print(name_to_num("paper"))   # 2
+print(name_to_num("lizard"))  # 3
+print(name_to_num("scissors"))  # 4
+
+
+# print("------------------------\n")
+# print("------------------------\n")
+# print("------------------------\n")
 
