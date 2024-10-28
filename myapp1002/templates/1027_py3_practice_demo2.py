@@ -1,4 +1,6 @@
 import datetime
+from datetime import timedelta
+
 
 
 
@@ -48,16 +50,21 @@ def days_between(year1: int, month1: int, day1: int, year2: int, month2: int, da
     valid_check1 = date_is_valid(year1, month1, day1)
     valid_check2 = date_is_valid(year2, month2, day2)
     if valid_check1 and valid_check2:
-        print("your checked out and dates are working")
-
+        print("your checked out and dates are valid")
+        return datetime.timedelta(valid_check2 - valid_check1)
     else:
+        print("your dates are not working, due to invalid dates input")
         return 0
 
 
+
+
+
 days1 = days_between(2024, 10, 27, 2024, 10, 27)
-print(days1)
+print(days1)  # your checked out and dates are working
+print("________")
 days2 = days_between(2024, 10, 27, 2024, 10, 35)
-print(days2)
+print(days2)  # 0
 
 
 

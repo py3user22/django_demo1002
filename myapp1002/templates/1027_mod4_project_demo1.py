@@ -78,7 +78,6 @@ def days_between(year1, month1, day1, year2, month2, day2):
         return abs(difference.days)
 
 
-
 check3 = days_between(2024, 10, 27, 2024, 10, 27)
 print(check3)
 check4 = days_between(2024, 10, 30, 2024, 12, 30)
