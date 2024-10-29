@@ -56,7 +56,7 @@ def days_between(year1: int, month1: int, day1: int, year2: int, month2: int, da
     date2 = datetime.date(year2, month2, day2)
 
     # if statement to check if valid inputs & prints out valid msg
-    if not (valid_check1 and valid_check2):
+    if not (valid_check1 and valid_check2):  # if not T and T booleans
         return "0 - Invalid dates provided"
 
     print(date1, date2)   # 2000-01-18 2024-10-27
