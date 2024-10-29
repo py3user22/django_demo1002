@@ -2,8 +2,15 @@ import datetime
 
 
 def days_in_month(year: int, month: int) -> int:
-    """ inputs: year between datetime.MINYEAR and datetime.MAXYEAR,
-        month - integer between 1 and 12  """
+    """
+    Inputs:
+      year  - an integer between datetime.MINYEAR and datetime.MAXYEAR
+              representing the year
+      month - an integer between 1 and 12 representing the month
+
+    Returns:
+      The number of days in the input month.
+    """
 
     if month == 12:
         next_month = datetime.date(year + 1, 1, 1)
@@ -19,7 +26,16 @@ def days_in_month(year: int, month: int) -> int:
 
 
 def is_valid_date(year: int, month: int, day: int) -> bool:
-    """ takes input year, month, day and returns True or False if it passes the validity check."""
+    """
+    Inputs:
+      year  - an integer representing the year
+      month - an integer representing the month
+      day   - an integer representing the day
+
+    Returns:
+      True if year-month-day is a valid date and
+      False otherwise
+    """
     try:
         datetime.datetime(year, month, day)
         return True
@@ -33,8 +49,20 @@ def is_valid_date(year: int, month: int, day: int) -> bool:
 
 
 def days_between(year1: int, month1: int, day1: int, year2: int, month2: int, day2: int) -> int:
-    """ method to take year2 and subtract year1 to check the days between the two,
-        and return the number of days between the two """
+    """
+    Inputs:
+      year1  - an integer representing the year of the first date
+      month1 - an integer representing the month of the first date
+      day1   - an integer representing the day of the first date
+      year2  - an integer representing the year of the second date
+      month2 - an integer representing the month of the second date
+      day2   - an integer representing the day of the second date
+
+    Returns:
+      The number of days from the first date to the second date.
+      Returns 0 if either date is invalid or the second date is
+      before the first date.
+    """
     # define local variables
     valid_check1 = is_valid_date(year1, month1, day1)
     valid_check2 = is_valid_date(year2, month2, day2)
@@ -44,10 +72,10 @@ def days_between(year1: int, month1: int, day1: int, year2: int, month2: int, da
 
     # if statement to check if valid inputs & prints out valid msg
     if not (valid_check1 and valid_check2):  # if not T and T booleans
-        return "0 - Invalid dates provided"
+        return 0
 
     year_diff = date2 - date1
-    return year_diff.days
+    return abs(year_diff.days)
 
 
 # days1 = days_between(2022, 10,27,2024,10,27)
@@ -55,8 +83,17 @@ def days_between(year1: int, month1: int, day1: int, year2: int, month2: int, da
 
 
 def age_in_days(year: int, month: int, day: int):
-    """ inputs : year, month, day for the birthday entry,
-        returns age of person as of today or 0 if invalid / future date"""
+    """
+    Inputs:
+      year  - an integer representing the birthday year
+      month - an integer representing the birthday month
+      day   - an integer representing the birthday day
+
+    Returns:
+      The age of a person with the input birthday as of today.
+      Returns 0 if the input date is invalid of if the input
+      date is in the future.
+    """
     # define local variables
     valid_check = is_valid_date(year, month, day)
     # create datetime objects
@@ -66,7 +103,8 @@ def age_in_days(year: int, month: int, day: int):
     if not valid_check:
         return 0
 
-
+    if date1 > today:
+        return 0
 
     year_diff = today - date1
     return year_diff.days
@@ -75,6 +113,8 @@ def age_in_days(year: int, month: int, day: int):
 # print(age_in_days(2000,1,18))  # 9051  @ 102924'
 # print(age_in_days(1998,2,15))  # 9753
 # print(age_in_days(1981,5,12))  # 15876
+# print(age_in_days(2027,12,15))  # 0 in future date input
+
 
 
 
