@@ -28,18 +28,19 @@
         <br>
         LPT (left plain text)<br>
         ..|<br>
-        ..|___> 16 rounds <---- key 64_bit --usage
-        <br><br>
-        64 bit key used to encrypt the blocks w/ 8 specific bits<br>
-        ..|<br>
-        ..|___> parity bits -> used to check for errors in the cipher text<br>
-        ..|___> every 8th bit is used for parity bit, <br>
-        ..|___> the key will have 56 bits after verification <br>
+        ..|___> 16 rounds <---- key 64_bit --usage<br>
 
         RPT (right plain text)<br>
         ..|<br>
         ..|___> 16 rounds <---- key 64_bit --usage
-        <br><br>
+
+        <br><br>==========================<br>
+        64 bit key used to encrypt the blocks w/ 8 specific bits<br>
+        ..|<br>
+        ..|___> parity bits -> used to check for errors in the cipher text<br>
+        ..|___> every 8th bit is used for parity bit, <br>
+        ..|___> the key will have 56 bits after verification <br><br>==========================<br>
+
         LPT --- FP --- RPT  conversion<br>
         FP (final permutation)<br>
         ..|<br>
@@ -52,12 +53,36 @@
     <p>
         #_______<br>
         Symmetric encryption <br>
-        divides data into blocks of equal size, ex.. 128 bits <br><br>
+        divides data into blocks of equal size, ex.. 128 bits <br>
+        starts with plain text<br>
+        ....|<br>
+        ....|____> Round 1:<br>
+        ....|____> byte substitution <br>
+        ....|____> Shifting of rows to the left<br>
+        ....|____> Mixing of columns<br>
+        ....|____> Add another round key<br><br>
+        _________________________<br>
+        Last round of mixing<br>
+        ....|____> byte substitution <br>
+        ....|____> byte substitution <br>
+        ....|____> Add another round key<br><br>
+
+        After all rounds are completed, the final block is made into cipher text<br>
+        Note: You will need the correct key to see the data<br>
+
+        <br><br>==========================<br>
+        Steps are repeated for a number of rounds<br>
+        <b>128 bit keys</b> go for 10 rounds <br><br>
+
+        <b>192 bit keys</b> go for 12 rounds <br><br>
+
+        <b>256 bit keys</b> go for 14 rounds <br><br>
+
+        <br><br>==========================<br>
 
 
 
-
-
+        <br>
 
     </p>
 
