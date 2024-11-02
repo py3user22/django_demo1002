@@ -33,3 +33,6 @@ def days_between(year1: int, month1: int, day1: int, year2: int, month2: int, da
 
     year_diff = date2 - date1
     return abs(year_diff.days)
+
+# print(days_between(20010, 1, 1, 2047, 8, 2))  # ValueError: out of range
+print(days_between(2020, 1, 1, 2222, 5, 10))  # 73908

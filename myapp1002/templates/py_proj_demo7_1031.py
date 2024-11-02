@@ -22,9 +22,6 @@ def days_in_month(year: int, month: int) -> int:
     return last_day_month.day
 
 
-# print(days_in_month(2020, 10))  # 31
-
-
 def is_valid_date(year: int, month: int, day: int) -> bool:
     """
     Inputs:
@@ -43,11 +40,6 @@ def is_valid_date(year: int, month: int, day: int) -> bool:
         return True
     except ValueError:
         return False
-
-
-# print(date_is_valid(2024, 10,29))  # True
-# print(date_is_valid(2027, 10, 29))  # True
-# print(date_is_valid(2024, 10,33))  # False
 
 
 def days_between(year1: int, month1: int, day1: int, year2: int, month2: int, day2: int) -> int:
@@ -83,12 +75,7 @@ def days_between(year1: int, month1: int, day1: int, year2: int, month2: int, da
     return abs(year_diff.days)
 
 
-# days1 = days_between(2022, 10,27,2024,10,27)
-# print(days1)  # 731
-# print(days_between(1973,8,14,1973,8,13))  # 0
-
-
-def age_in_days(year: int, month: int, day: int):
+def age_in_days(year: int, month: int, day: int) -> int:
     """
     Inputs:
       year  - an integer representing the birthday year
@@ -102,32 +89,20 @@ def age_in_days(year: int, month: int, day: int):
     """
     # define local variables
     valid_check = is_valid_date(year, month, day)
-    # create datetime objects
+    # create datetime objects for current date
     today = datetime.date.today()
+    # create datetime object for the given input date
     date1 = datetime.date(year, month, day)
 
-    if not valid_check:
+    try:
+        if not valid_check:
+            return 0
+
+    except ValueError:
         return 0
 
     if date1 > today:
         return 0
 
-    if date1 == today:
-        return 0
-
-
     year_diff = today - date1
     return abs(year_diff.days)
-
-
-# print(age_in_days(2000,1,18))  # 9051  @ 102924'
-# print(age_in_days(1998,2,15))  # 9753
-# print(age_in_days(1981,5,12))  # 15876
-# print(age_in_days(2027,12,15))  # 0 in future date input
-
-
-
-
-
-
-

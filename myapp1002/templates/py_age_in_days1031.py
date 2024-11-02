@@ -17,16 +17,19 @@ def age_in_days(year: int, month: int, day: int) -> int:
     # define local variables
     valid_check = is_valid_date(year, month, day)
     # create datetime objects for current date
-    today = datetime.datetime.now()
+    today = datetime.date.today()
     # create datetime object for the given input date
-    date1 = datetime.datetime(year, month, day)
+    date1 = datetime.date(year, month, day)
 
-    if not valid_check:
+    try:
+        if not valid_check:
+            return 0
+
+    except ValueError:
         return 0
 
     if date1 > today:
         return 0
-
 
     year_diff = today - date1
     return abs(year_diff.days)

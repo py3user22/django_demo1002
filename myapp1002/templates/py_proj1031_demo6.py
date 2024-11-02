@@ -21,7 +21,4 @@ print(days_between(2024, 10, 1, 2025, 10, 31))  # 395
 print(age_in_days(2000, 1, 18))  # 9053
 print(age_in_days(1998, 2, 15))  # 9755
 print(age_in_days(1, 1, 21))  # 739169  -> 0 for <=1
-# print(age_in_days(0, 1, 15))  # out of range?
 print(age_in_days(2029, 2, 15))  # 0 in future
-
-
