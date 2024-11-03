@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="1017_css_adds.css">
+    <title>1102 python notes </title>
+</head>
+<body>
+    <h1 id="topg">1102 python notes</h1>
+    <a href="#botp">Link to bottom page</a>
+    <h3>string indexing</h3>
+    <p>
+        #___________________<br>
+        phrase = "Jesus G. was here!"<br><br>
+
+        print(phrase[0]  # J   <br>
+        print(phrase[4]  # s   <br>
+
+
+    </p>
+
+    <h3>format specification in a replacement field "{}"</h3>
+    <p>
+        #___________________<br>
+        name1 = "Pierre" <br>
+        age1 = 7 <br>
+        name2 = "May" <br>
+        age2 = 13 <br><br>
+
+        line1 = "{0:^7} {1:>3}".format(name1, age1)<br>
+        line2 = "{0:^7} {1:>3}".format(name2, age2)<br>
+        print(line1)  <br>
+        print(line2)  <br><br>
+
+        In the format strings in variable -> line1 and line2<br>
+        argument index {0: ^7}  # the 0 followed by colon :<br>
+        format specifier {0: ^7}  # the ^7 is the width of the field in the output<br>
+        <br>
+        The width is preceded by a symbol <, >, ^<br>
+        > for right aligned <br>
+        < for left aligned <br>
+        ^ for center <br><br>
+
+        # output<br>
+        Pierre .....7<br>
+        ..May ....13<br><br>
+
+        # optional --> attached to the format specifier --> numerical precision & type option<br>
+        precision -> a number preceded by a period .  & must appear after the alignment & width<br>
+        type option -> single letter that always appears at the end of format specification<br><br>
+
+        num1103 = 3.283663265<br>
+        output = "{0:>10.3f} {0:.2f}".format(num1103)<br>
+        print(output)  #    <br><br>
+
+
+
+    </p>
+
+    <h3></h3>
+    <p>
+        #___________________<br>
+    </p>
+
+    <h3></h3>
+    <p>
+        #___________________<br>
+    </p>
+
+    <h3></h3>
+    <p>
+        #___________________<br>
+    </p>
+
+    <h3></h3>
+    <p>
+        #___________________<br>
+    </p>
+
+    <a href="#topg" id="botp">Link to top</a>
+</body>
+</html>
